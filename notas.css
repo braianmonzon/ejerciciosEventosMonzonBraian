@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+  }
+
+  .container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .nota-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .nota-form input,
+  .nota-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .nota-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .nota-form button.limpiar {
+    background-color: #f44336;
+  }
+
+  .nota-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nota {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+  }
+
+  .nota h3,
+  .nota p {
+    margin-top: 0;
+  }
+
+  .nota.tachada h3,
+  .nota.tachada p {
+    text-decoration: line-through;
+    color: #888;
+  }
+
+  .nota button.eliminar {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  #filtro-texto {
+    margin-bottom: 10px;
+  }

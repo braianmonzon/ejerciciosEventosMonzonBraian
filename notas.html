@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplicación de Notas</title>
+  <link rel="stylesheet" href="./notas.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>Aplicación de Notas</h1>
+    <div class="nota-form">
+      <input type="text" id="nota-titulo" placeholder="Ingresa el título de la nota" />
+      <textarea id="nota-texto" placeholder="Ingresa el texto de la nota"></textarea>
+      <div>
+        <button class="guardar" onclick="agregarNota()">Guardar Nota</button>
+        <button class="limpiar" onclick="limpiarFormatoNota()">Limpiar</button>
+      </div>
+    </div>
+    <label for="filtro-texto">Filtrar por texto:</label>
+    <input type="text" id="filtro-texto" oninput="aplicarFiltros()">
+
+    <label for="filtro-realizada">Filtrar por notas realizadas:</label>
+    <input type="checkbox" id="filtro-realizada" onchange="aplicarFiltros()">
+
+    <div class="nota-container" id="nota-container"></div>
+  </div>
+
+  <script src="./notas.js"></script>
+
+  
+</body>
+</html>
